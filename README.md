@@ -217,20 +217,20 @@ O que precisamos fazer é colocar as informações em um outro lugar, uma outra 
     Marco Antonio    |      mantonio@abc.com    |   (21)2255-8899  |   02/01/2000
         
                           **Pedidos**
-      id |       cliente        |          dataHora      |  
-      1  | * Maria Nascimento   |   2019-10-21 12:30:22  | 
-      2  | * Maria Nascimento   |   2019-10-21 12:30:22  | 
+      id |       cliente        |          dataHora      |
+      1  | * Maria Nascimento   |   2019-10-21 12:30:22  |
+      2  | * Maria Nascimento   |   2019-10-21 12:30:22  |
       3  | * Maria Nascimento   |   2019-10-21 12:30:22  |       
       
        
              **PedidoItensCardapio**
-      id |     itemCardapio |  quantidade |  
-      1  |   File Mignon    |      1      | 
-      1  |   Café           |      2      | 
-      1  |   Sorvete        |      3      | 
-      2  |   Frango         |      4      | 
-      3  |   Café           |      1      | 
-      3  |   Sorvete        |      3      | 
+      id |     itemCardapio |  quantidade |
+      1  |   File Mignon    |      1      |
+      1  |   Café           |      2      |
+      1  |   Sorvete        |      3      |
+      2  |   Frango         |      4      |
+      3  |   Café           |      1      |
+      3  |   Sorvete        |      3      |
       
      
 
