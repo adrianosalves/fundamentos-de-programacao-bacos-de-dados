@@ -135,6 +135,47 @@ Para começar, não vou mergulhar em nenhum software específico e construir um 
   
   - e finalmente que você possa controlar o acesso a eles, acompanhando exatamente quem fez o quê e quando.**(Controlar e rastrer o acesso aos dados)**.
 
+# Informação sem estrutura
+
+Quando você selecionar uma linha na transcrição, será direcionado à seção equivalente no vídeo
+O objetivo de ter dados é conseguir usá-los para alguma coisa útil, e o banco de dados te traz essas ferramentas. Você faz uma pergunta para ele e ele te responde de uma maneira rápida, precisa e segura. 
+
+**Restaurante**
+
+Vamos ao exemplo de um restaurante. 
+
+- Digamos que alguns **clientes são muito fiéis** e sempre voltam. 
+- Eles praticamente sustentam o seu negócio, não só com as suas visitas, mas também com **indicações do seu restaurante para novos clientes**.
+- Você decide então que quer recompensar esses clientes com **50% de desconto a cada 10 visitas.**
+
+**Clientes**
+
+Para começar..., 
+
+- você precisa de um **registro de quem eles são**. Você pode anotar as informações de cada cliente em um papel com o **nome, o e-mail, o número de telefone e até mesmo o dia do aniversário deles**. Se você tem poucos clientes esse método funciona, 
+- mas à medida que você tem mais clientes e o **volume aumenta**, fica cada vez mais difícil saber quais são as informações que você tem de cada cliente. 
+- Fica difícil até mesmo de encontrar um único cliente(**Caos total**). E ainda nem estou falando de anotar os itens do cardápio que foram pedidos a cada visita, ou dos ingredientes que cada um desses itens, as receitas, e tudo o que você poderia coletar e utilizar no seu negócio. 
+
+A não ser que você tenha um sistema de organização muito bem definido e muito bem executado, a simples tarefa de atualizar 50 usuários por noite vai se tornar um pesadelo bem rapidinho. Mas você deve está pensando: "quem que usa cartões de papel ainda?".Bastante gente. 
+
+**Planilhas**
+
+
+          nome       |          email           |   telefone       | aniversario
+    Maria Nascimento |   mnascimento@abc.com    |   (11)1234-4455  |   10/10/1980
+    Janio Quadros    |    jaquadro@abc.com      |   (11)3344-5566  |   11/12/1975
+    José Abreu       |                          |   (11)7788-9910  |   21/01/1845
+    Sergio Santos    |      ssatos@abc.com      |   (11)1010-1112  |   06/06/1990
+    Marco Antonio    |      mantonio@abc.com    |   (21)2255-8899  |   02/01/2000
+
+
+- Você também deve estar pensando que podemos colocar as informações do caderno em uma planilha simples. Essa planilha certamente nos dá uma estrutura e facilita a trabalhar com as informações dos clientes. **(Dados estruturados)**
+- Esse mínimo de estrutura já evidencia a falta de alguns dados de alguns clientes, por exemplo **(Visualização dos dados)**. Como a gente vê aqui nessa tabela, onde tem o e-mail do José Abreu faltando.
+-  E também fica muito mais fácil de enviar um e-mail para todo mundo de uma vez, por exemplo, copiando e colando as informações em vez de ter que pegar cada um desses papéis e digitar eles no e-mail **(Manipulação dos dados)**.
+- Uma planilha tem uma estrutura **parecida com a de uma tabela de um banco de dados**. 
+- Aqui estamos listando os nossos clientes, onde cada linha representa um cliente e cada coluna representa uma característica do nosso cliente, como o nome, o e-mail, o telefone, e assim por diante **(Um registro por linha)**. Geralmente chamamos as linhas de "registros **(Um registro por linha)** e as colunas de "atributos" **(Um atributo por coluna)**. 
+- Bem mais organizado do que os pedaços de papel, não é mesmo? Cada cliente tem um registro ou uma linha na tabela, e cada informação dentro de um papel individual tem um lugar, um dado semelhantes em um campo ou coluna. Então temos aqui o nome, o e-mail, o telefone e o aniversário, cada um com a sua coluna. E pronto, você pode jogar todos esses pedaços de papel fora. Você vai ter os seus dados em um formato muito mais estruturado e fácil de manipular.
+
 
   
   
