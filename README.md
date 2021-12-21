@@ -37,11 +37,11 @@ Pode parecer um bicho de sete cabeças, mas eu vou te explicar passo a passo com
 Quando você selecionar uma linha na transcrição, será direcionado à seção equivalente no vídeo
 Antes de mais nada, eu quero fazer uma distinção muito importante. Vou falar sobre bancos de dados em geral, sem entrar em nenhum **sistema de gerenciamento de banco de dados** ou **"SGDB"** específico, pois existem vários. Em inglês esses sistemas são chamados de **"DBMS". DBMS, "Database Management Systems"** Mas vou me referenciar a eles como um sistema para simplificar as coisas aqui. Alguns exemplos de sistemas são: 
 
-.o "MySQL";
+- **o "MySQL";
 
-.o "SQL Server";
+- **o "SQL Server";**
 
-.ou o "Microsoft Acess".**
+- **ou o "Microsoft Acess".**
 
 
 Eles são utilizados para interagir com bancos de dados, mas não se preocupe, para acompanhar esse curso você não precisa de nenhum software especial. Você também não precisa saber programar e nem conhecer os conceitos básicos de estruturação de dados. Você também não precisa nem ter acesso a um banco de dados em si para acompanhar esse curso. Vou falar sobre alguns conceitos básicos que fazem um banco de dados relacional funcionar, e demonstrar alguns exemplos práticos de como trabalhar com eles.
@@ -68,11 +68,11 @@ Para começar, não vou mergulhar em nenhum software específico e construir um 
  
  **2. Atualizações**
  
-  E para fazer **a atualização das informações no seu banco de dados?** O que que acontece se dois usuários diferentes no seu banco de dados tentarem alterar o mesmo telefone da mesma pessoa ao mesmo tempo **(Alterar Registros)**?
+  - E para fazer **a atualização das informações no seu banco de dados?** O que que acontece se dois usuários diferentes no seu banco de dados tentarem alterar o mesmo telefone da mesma pessoa ao mesmo tempo **(Alterar Registros)**?
   
-  E se forem várias pessoas tentando acessar o mesmo arquivo ao mesmo tempo? Como é que você lida com isso **(Acesso múltiplos)**? 
+  - E se forem várias pessoas tentando acessar o mesmo arquivo ao mesmo tempo? Como é que você lida com isso **(Acesso múltiplos)**? 
   
-  Se você trabalha com um sistema tradicional baseado em arquivos, isso simplesmente é muito problemático. Somente os dados da última pessoa que salvou o arquivo serão armazenados, sem saber quem mudou o que no arquivo **(Historio de versões)**. 
+  - Se você trabalha com um sistema tradicional baseado em arquivos, isso simplesmente é muito problemático. Somente os dados da última pessoa que salvou o arquivo serão armazenados, sem saber quem mudou o que no arquivo **(Historio de versões)**. 
   
   **3. Precisão**
   
@@ -119,8 +119,3 @@ Para começar, não vou mergulhar em nenhum software específico e construir um 
   E é para solucionar esses tipos de problemas que precisamos de bancos de dados. 
   
   Não precisamos deles somente como um lugar para colocar dados. Precisamos de uma novidade para que o volume de dados possa crescer e que esse crescimento seja gerenciável; que seja fácil de procurar pelas informações desejadas; que seja fácil atualizar os dados - até mesmo que seja por muitas pessoas ao mesmo tempo; que os dados sejam precisos internamente e consistentes, mantendo-os seguros; e finalmente que você possa controlar o acesso a eles, acompanhando exatamente quem fez o quê e quando.
-
-
-
-
-
