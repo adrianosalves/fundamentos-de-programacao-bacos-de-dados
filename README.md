@@ -37,9 +37,11 @@ Pode parecer um bicho de sete cabeças, mas eu vou te explicar passo a passo com
 Quando você selecionar uma linha na transcrição, será direcionado à seção equivalente no vídeo
 Antes de mais nada, eu quero fazer uma distinção muito importante. Vou falar sobre bancos de dados em geral, sem entrar em nenhum **sistema de gerenciamento de banco de dados** ou **"SGDB"** específico, pois existem vários. Em inglês esses sistemas são chamados de **"DBMS". DBMS, "Database Management Systems"** Mas vou me referenciar a eles como um sistema para simplificar as coisas aqui. Alguns exemplos de sistemas são: 
 
-**1.o "MySQL";
-2.o "SQL Server";
-3.ou o "Microsoft Acess".**
+.o "MySQL";
+
+.o "SQL Server";
+
+.ou o "Microsoft Acess".**
 
 
 Eles são utilizados para interagir com bancos de dados, mas não se preocupe, para acompanhar esse curso você não precisa de nenhum software especial. Você também não precisa saber programar e nem conhecer os conceitos básicos de estruturação de dados. Você também não precisa nem ter acesso a um banco de dados em si para acompanhar esse curso. Vou falar sobre alguns conceitos básicos que fazem um banco de dados relacional funcionar, e demonstrar alguns exemplos práticos de como trabalhar com eles.
@@ -98,11 +100,11 @@ Para começar, não vou mergulhar em nenhum software específico e construir um 
   
   Por exemplo, na tabela de itens do cardápio aqui, 
   
-    **id |        nome      |   preço**
-    **1  |    Fíle Mignon   |   R$15,00**
-      2  |    Batata Doce   |   R$5,53
-    **3  |    Fíle Mignon   |   R$15,00**
-      4  |      Batata      |   R$2,01
+    id |        nome      |   preço
+    1  |    Fíle Mignon   |   R$15,00
+    2  |    Batata Doce   |   R$5,53
+    3  |    Fíle Mignon   |   R$15,00
+    4  |      Batata      |   R$2,01
   
   
   por engano o filé mignon está listado duas vezes **(Informações conflitantes)**: uma vez com um **valor de 12 reais**, e outra com um **valor de 15 reais**. Qual que é o valor certo? É difícil dizer aqui sem saber quem foi que criou esse registro e quando. O mais importante é criar mecanismos que evitem ou pelo menos alertem o usuário que temos o potencial de informações duplicadas. 
