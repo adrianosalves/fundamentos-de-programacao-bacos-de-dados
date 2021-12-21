@@ -109,13 +109,32 @@ Para começar, não vou mergulhar em nenhum software específico e construir um 
   
   por engano o filé mignon está listado duas vezes **(Informações conflitantes)**: uma vez com um **valor de 12 reais**, e outra com um **valor de 15 reais**. Qual que é o valor certo? É difícil dizer aqui sem saber quem foi que criou esse registro e quando. O mais importante é criar mecanismos que evitem ou pelo menos alertem o usuário que temos o potencial de informações duplicadas. 
   
+  **6. Importância**
+  
   E finalmente qual a **importância dos seus dados**. 
-  .Você está armazenando a cor preferida do usuário, ou o seu tipo sanguíneo, alergias e outras informações que podem salvar a sua vida **(Tipo de informação)**? 
-  .E o que acontece com a sua empresa e com seus clientes se você perder essas informações **(Relevância)**? 
-  .Os dados que você armazena são críticos (**Dependência)**? Na maioria dos casos você não pode perder nada, nem uma única mudança. 
+  
+  - Você está armazenando a cor preferida do usuário, ou o seu tipo sanguíneo, alergias e outras informações que podem salvar a sua vida **(Tipo de informação)**? 
+  
+  - E o que acontece com a sua empresa e com seus clientes se você perder essas informações **(Relevância)**? 
+  
+  - Os dados que você armazena são críticos (**Dependência)**? Na maioria dos casos você não pode perder nada, nem uma única mudança. 
   
   **Banco de dados:**
   
   E é para solucionar esses tipos de problemas que precisamos de bancos de dados. 
   
-  Não precisamos deles somente como um lugar para colocar dados. Precisamos de uma novidade para que o volume de dados possa crescer e que esse crescimento seja gerenciável; que seja fácil de procurar pelas informações desejadas; que seja fácil atualizar os dados - até mesmo que seja por muitas pessoas ao mesmo tempo; que os dados sejam precisos internamente e consistentes, mantendo-os seguros; e finalmente que você possa controlar o acesso a eles, acompanhando exatamente quem fez o quê e quando.
+  Não precisamos deles somente como um lugar para colocar dados. 
+  
+  - Precisamos de uma novidade para que o volume de dados possa crescer e que esse crescimento seja gerenciável;**Gerenciar grandes volumes de dados)**
+  
+  - que seja fácil de procurar pelas informações desejadas;(**Transformar dados em Informações úteis)**; 
+  
+  -  que seja fácil atualizar os dados - até mesmo que seja por muitas pessoas ao mesmo tempo;**(Manter dados atualizados por vários usuários)**.
+  
+  - que os dados sejam precisos internamente e consistentes, mantendo-os seguros;(**Garantir precisão e consistência dos dados)** 
+  
+  - e finalmente que você possa controlar o acesso a eles, acompanhando exatamente quem fez o quê e quando.**(Controlar e rastrer o acesso aos dados)**.
+
+
+  
+  
