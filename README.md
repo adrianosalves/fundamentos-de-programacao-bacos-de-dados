@@ -176,6 +176,65 @@ A não ser que você tenha um sistema de organização muito bem definido e muit
 - Aqui estamos listando os nossos clientes, onde cada linha representa um cliente e cada coluna representa uma característica do nosso cliente, como o nome, o e-mail, o telefone, e assim por diante **(Um registro por linha)**. Geralmente chamamos as linhas de "registros **(Um registro por linha)** e as colunas de "atributos" **(Um atributo por coluna)**. 
 - Bem mais organizado do que os pedaços de papel, não é mesmo? Cada cliente tem um registro ou uma linha na tabela, e cada informação dentro de um papel individual tem um lugar, um dado semelhantes em um campo ou coluna. Então temos aqui o nome, o e-mail, o telefone e o aniversário, cada um com a sua coluna. E pronto, você pode jogar todos esses pedaços de papel fora. Você vai ter os seus dados em um formato muito mais estruturado e fácil de manipular.
 
+**Informação com estrutura**
+.
+Com as informações básicas dos clientes em uma planilha, você agora pode capturar o que cada cliente pediu em cada uma das suas visitas ao restaurante. 
+
+
+          nome       |          email           |   telefone       | aniversario   | Pedido
+    Maria Nascimento |   mnascimento@abc.com    |   (11)1234-4455  |   10/10/1980  | File mignon, café, sorvete. Dois dias atras.
+    Janio Quadros    |    jaquadro@abc.com      |   (11)3344-5566  |   11/12/1975
+    José Abreu       |                          |   (11)7788-9910  |   21/01/1845
+    Sergio Santos    |      ssatos@abc.com      |   (11)1010-1112  |   06/06/1990
+    Marco Antonio    |      mantonio@abc.com    |   (21)2255-8899  |   02/01/2000
+
+Como que você faria isso? Bom, você pode adicionar uma coluna para anotar o pedido. Você se lembra que a Maria pediu um filé mignon, um café e um sorvete dois dias atrás. 
+
+No dia seguinte, ela voltou e pediu só o frango. Mas espera aí, eu já estou um pouco confuso, muita informação em uma coluna só. E se você criar uma coluna para cada pedido? 
+
+
+          nome       |          email           |   telefone       | aniversario   | Pedido
+    Maria Nascimento |   mnascimento@abc.com    |   (11)1234-4455  |   10/10/1980  | File mignon, café, sorvete. Dois dias atras.
+    Maria Nascimento |   mnascimento@abc.com    |   (11)1234-4455  |   10/10/1980  | Frango. Ontem.
+    Maria Nascimento |   mnascimento@abc.com    |   (11)1234-4455  |   10/10/1980  | Café, sorvete. Hoje.
+    Janio Quadros    |    jaquadro@abc.com      |   (11)3344-5566  |   11/12/1975
+    José Abreu       |                          |   (11)7788-9910  |   21/01/1845
+    Sergio Santos    |      ssatos@abc.com      |   (11)1010-1112  |   06/06/1990
+    Marco Antonio    |      mantonio@abc.com    |   (21)2255-8899  |   02/01/2000
+
+Mas quantas colunas que eu tenho que criar? Já sei! Cada pedido vai estar em uma nova linha, repetindo as informações, mas alterando o pedido. Mas isso me parece muito ineficiente, muita informação repetida. 
+
+São esses tipos de problemas ou limitações que temos com as planilhas. Mas são exatamente esses os pontos fortes do banco de dados. No exemplo, as informações sobre os pedidos estão no mesmo lugar que as informações sobre os clientes. 
+
+O que precisamos fazer é colocar as informações em um outro lugar, uma outra tabela,, e em seguida ligar uma com a outra. A maneira correta de se fazer isso é criar uma nova tabela para os pedidos, relacionando esse pedido com um cliente. 
+
+                                     **Clientes**
+          nome       |          email           |   telefone       | aniversario
+  * Maria Nascimento |   mnascimento@abc.com    |   (11)1234-4455  |   10/10/1980
+    Janio Quadros    |    jaquadro@abc.com      |   (11)3344-5566  |   11/12/1975
+    José Abreu       |                          |   (11)7788-9910  |   21/01/1845
+    Sergio Santos    |      ssatos@abc.com      |   (11)1010-1112  |   06/06/1990
+    Marco Antonio    |      mantonio@abc.com    |   (21)2255-8899  |   02/01/2000
+        
+                          **Pedidos**
+      id |       cliente        |          dataHora      |  
+      1  | * Maria Nascimento   |   2019-10-21 12:30:22  | 
+      2  | * Maria Nascimento   |   2019-10-21 12:30:22  | 
+      3  | * Maria Nascimento   |   2019-10-21 12:30:22  |       
+      
+       
+             **PedidoItensCardapio**
+      id |     itemCardapio |  quantidade |  
+      1  |   File Mignon    |      1      | 
+      1  |   Café           |      2      | 
+      1  |   Sorvete        |      3      | 
+      2  |   Frango         |      4      | 
+      3  |   Café           |      1      | 
+      3  |   Sorvete        |      3      | 
+      
+     
+
+Cada linha representa um pedido em uma data e hora diferente. E os itens pedidos? Eles estão em uma outra tabela e relacionada ao pedido a partir desse "ID", um identificador único. Cada linha representa um item de pedido. O pedido com "ID" número um teve três itens: um filé mignon, dois cafés e um sorvete. O pedido com "ID" número três teve só dois itens: quatro cafés e o sorvete. Um banco de dados geralmente contém mais de uma tabela, incluindo os relacionamentos entre elas. Esses relacionamentos são criados baseado em regras que você define, e esse conjunto ou estrutura contendo as tabelas relacionadas e as regras é chamado de esquema. Além de criar regras de relacionamento, podemos também criar regras para cada campo, como por exemplo o campo de telefone não pode conter letras, e o campo data tem que conter uma data válida. Conseguimos também proteger certas tabelas e campos individuais dependendo do nível de acesso do usuário. Por exemplo, somente o administrador do sistema pode alterar o e-mail de um usuário, e mais ninguém. Outro exemplo seria exibir somente o número de telefone de seus clientes para a equipe de vendas. Perfeito, não? Temos vários recursos para manter os dados organizados e protegidos, mas os bancos de dados ainda têm muito mais do que isso.
 
   
   
